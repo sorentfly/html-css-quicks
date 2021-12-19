@@ -98,6 +98,26 @@ body
     transform: translateY(-4px);
     opacity: 1;
 }
+.navigation .list .item:nth-child(1).active ~ .selector 
+{
+    transform: translateX(calc(70px * 0));
+}
+.navigation .list .item:nth-child(2).active ~ .selector 
+{
+    transform: translateX(calc(70px * 1));
+}
+.navigation .list .item:nth-child(3).active ~ .selector 
+{
+    transform: translateX(calc(70px * 2));
+}
+.navigation .list .item:nth-child(4).active ~ .selector 
+{
+    transform: translateX(calc(70px * 3));
+}
+.navigation .list .item:nth-child(5).active ~ .selector 
+{
+    transform: translateX(calc(70px * 4));
+}
 .selector 
 {
     position: absolute;
