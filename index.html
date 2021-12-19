@@ -53,7 +53,13 @@
     </body>
 
     <script>
-        
+        const aItem = document.querySelectorAll('#circled-nav .item')
+        function handleClick()
+        {
+            aItem.forEach((item) => item.classList.remove('active'))
+            this.classList.add('active')
+        }
+        aItem.forEach((item) => item.addEventListener('click', handleClick))
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
